@@ -23,7 +23,7 @@ void solve() {
     for(int i = 1; i <= q; i++) {
         int n; cin >> n; // Find prime factorization of n
         vector<int> v;
-        while(n > 1) { // Estimately less than O(log n)
+        while(n > 1) { // Approximately less than O(log n)
             v.push_back(spf[n]);
             n /= spf[n];
         }

@@ -11,7 +11,7 @@ void solve() {
     vector<int> v;
     for(int i = 2; i*i <= n; i++) { 
         if(n % i == 0) {
-            while(n % i == 0) { // Always think n in skeleton form(PF)
+            while(n % i == 0) { // Always think n in skeleton view(PF)
                 v.push_back(i);
                 n /= i;
             }

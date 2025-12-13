@@ -18,8 +18,7 @@ void pre_spf() {
     }
 
 }
-void solve() {
-    int n; cin >> n; // Find prime factorization of n
+void prime_fact(int n) {
     vector<int> v;
     while(n > 1) { // Approximately less than O(log n)
         v.push_back(spf[n]);
@@ -34,6 +33,6 @@ int main() {
     cin.tie(NULL);
 
     pre_spf();
-    solve();
+    prime_fact(112);
     return 0;
 }
